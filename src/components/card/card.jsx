@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from '../card/Card.module.css'
 
 export const Profile = ({
   username,

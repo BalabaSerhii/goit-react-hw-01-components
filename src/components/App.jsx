@@ -3,7 +3,8 @@ import data from '../data/data.json';
 import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
 
-import { Profile } from './card/card';
+import { Profile } from './card/Card';
+import { Statistics } from './statistics/Statistics';
 
 const rootStyles = {
   height: '100vh',
@@ -25,6 +26,7 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+<Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
